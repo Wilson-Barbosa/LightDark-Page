@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +9,48 @@
 </head>
 <body>
 
-
+    <!----------------------NAGIVATION MENU---------------------->
     <header>
-        <div>
-            <i></i>
+        <div class="logo-flex-selector">
+            <i class="fa-solid fa-robot"></i>
             <p>HealthyBites</p>
         </div>
         
         <nav>
             <ul class="navigation-menu-selector">
                 <li class="navigation-option"><a href="#who-are-we">About us</a></li>
-                <li class="navigation-option"><a href="#plans-container">Our Plans</a></li>
+                <li class="navigation-option"><a href="#plans-flex-selector">Our Plans</a></li>
                 <li class="navigation-option"><a href="#subscribe-form-selector">Subscribe</a></li>
             </ul>
         </nav>
     </header>
 
+    <!----------------------THEME AND LANGUAGE---------------------->
+    <div id="dropdown-menus-container">
+        <div id="right-border-selector">
+            <label class="option-title" for="theme-dropdown">Theme:</label>
+            <select id="theme-dropdown">
+                <option value="">-Select an option-</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
 
+        <div>
+            <label class="option-title"  for="language-dropdown">Language:</label>
+            <select id="language-dropdown">
+                <option value="">-Select an option-</option>
+                <option value="portuguese">Portuguese</option>
+                <option value="english">English</option>
+            </select>
+        </div>
+    </div>
+
+    <!----------------------INTRODUCTION---------------------->
     <main>
         <section id="who-are-we">
             <h2>About us</h2>
-            <p>HealthyBites is an all-in-one fitness and wellness platform designed to help users achieve their health goals from the comfort of their homes. With a range of subscription-based plans, users can access personalized workouts, expert nutrition advice, and a supportive community to stay motivated</p>
+            <p>HealthyBites is an all-in-one fitness and wellness platform designed to help users achieve their health goals from the comfort of their homes. With a range of subscription-based plans, users can access personalized workouts, expert nutrition advice, and a supportive community to stay motivated!</p>
         </section>
 
         <hr>
@@ -37,57 +58,52 @@
         <section id="plans-flex-selector">
             <div class="individual-plan-container">
                 <h3 class="plan-type-title">Free</h3>
-                <p class="plan-options">Here is an option</p>
-                <p class="plan-options">Here is an option</p>
-                <p class="plan-options">Here is an option</p>
-                <p class="plan-options">Here is an option</p>
-                <p class="plan-options">Here is an option</p>        
-                <h4 class="price-selector">$10,00</h4>
+                <p class="plan-options">Here goes an option</p>
+                <p class="plan-options">Here goes an option</p>
+                <p class="plan-options">Here goes an option</p>
+                <p class="plan-options">Here goes an option</p>
+                <p class="plan-options">Here goes an option</p>        
+                <h4 class="price-selector">$ 0,00</h4>
             </div>
             <div class="individual-plan-container">
                 <h3 class="plan-type-title">Free</h3>
-                <p class="plan-options">Here is an option</p>
-                <p class="plan-options">Here is an option</p>
-                <p class="plan-options">Here is an option</p>
-                <p class="plan-options">Here is an option</p>
-                <p class="plan-options">Here is an option</p>
-                <h4 class="price-selector">$10,00</h4>
+                <p class="plan-options">Here goes an option</p>
+                <p class="plan-options">Here goes an option</p>
+                <p class="plan-options">Here goes an option</p>
+                <p class="plan-options">Here goes an option</p>
+                <p class="plan-options">Here goes an option</p>
+                <h4 class="price-selector">$ 9.99</h4>
             </div>
             <div class="individual-plan-container">
                 <h3 class="plan-type-title">Free</h3>
-                <p class="plan-options">Here is an option</p>
-                <p class="plan-options">Here is an option</p>
-                <p class="plan-options">Here is an option</p>
-                <p class="plan-options">Here is an option</p>
-                <p class="plan-options">Here is an option</p>
-                <h4 class="price-selector">$10,00</h4>
+                <p class="plan-options">Here goes an option</p>
+                <p class="plan-options">Here goes an option</p>
+                <p class="plan-options">Here goes an option</p>
+                <p class="plan-options">Here goes an option</p>
+                <p class="plan-options">Here goes an option</p>
+                <h4 class="price-selector">$ 29.99</h4>
             </div>
         </section>
         
         <hr>
 
+        <!----------------------NEWSLETTER---------------------->
         <section id="subscribe-form-selector">
             <form class="newsletter-flex-container">
                 <p>Subscribe to our Newsletter to receive discounts</p>
-                <input type="email" placeholder="Type your email here" required>
+                <input id="email-input" type="email" placeholder="Type your email here" required>
                 <button type="button">Register</button>
             </form>
         </section>
     </main>
 
-
+    <!----------------------FOOTER INFO---------------------->
     <footer>
         <p>HealthyBites - All rights Reserved</p>
         <div class="brand-logos-flex-container">
-            <div class="logo-brand-flex-selector">
-                <i class="fa-brands fa-instagram"></i><p>Instagram</p>
-            </div>
-            <div class="logo-brand-flex-selector">
-                <i class="fa-brands fa-facebook"></i><p>Facebook</p>
-            </div>
-            <div class="logo-brand-flex-selector">
-                <i class="fa-brands fa-whatsapp"></i><p>WhatsApp</p>
-            </div>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i><p>Instagram</p></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i><p>Facebook</p></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i><p>WhatsApp</p></a>
         </div>
     </footer>
 

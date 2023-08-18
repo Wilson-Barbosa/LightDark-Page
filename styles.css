@@ -1,3 +1,12 @@
+:root{
+    --header-backgroundcolor: #1934b1;
+    --header-and-footer-border-color: #1518af;
+    --background-color: #ffffff;
+    --font-color: #000000;
+    --shadow-color: #808080;
+    --border-color: #000000;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,8 +14,8 @@
 }
 
 body {
-    background-color: rgb(179, 179, 179);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--background-color);
 }
 hr {
     margin: 4rem;
@@ -18,10 +27,11 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 2px solid black;
-    font-size: 2rem;
+    border-bottom: 3px solid var(--header-and-footer-border-color);
     position: sticky;
     top: 0;
+    height: 80px;
+    background-color: var(--header-backgroundcolor);
 }
 
 .navigation-menu-selector {
@@ -35,15 +45,54 @@ header {
 
 .navigation-option > a {
     text-decoration: none;
+    font-weight: 600;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navigation-option > a:hover {
+    color: #4acf72;
+}
+
+.logo-flex-selector {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 2rem;
+    color: #2ff149;
+}
+
+/*-----------------THEME/LANGUAGE-----------------*/
+#dropdown-menus-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    font-size: 1.05rem;
+}
+
+#dropdown-menus-container > div {
+    padding: 10px;
+}
+
+#right-border-selector {
+    border-right: 1px solid var(--border-color);
+}
+
+.option-title {
+    color: var(--font-color);
 }
 
 /*-----------------INTRODUCTION-----------------*/
 #who-are-we {
-    border: 1px solid black;
     margin-top: 4rem;
     margin-right: 15vw;
     margin-left: 15vw;
     font-size: 1.7rem;
+    color: var(--font-color);
+}
+
+#who-are-we > h2 {
+    margin: 10px;
 }
 
 /*-----------------TYPES OF SUBSCRIPTIONS-----------------*/
@@ -57,28 +106,43 @@ header {
 }
 
 .plan-type-title {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid var(--border-color);
+    background-color: var(--header-backgroundcolor);
     padding: 10px 80px;
     font-size: 2rem;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: #f7f7f7;
 }
 
 .plan-options {
+    padding: 10px 20px;
     margin: 10px;
     font-size: 1.5rem;
+    color: var(--font-color);
 }
 
 .price-selector {
-    border: 1px solid black;
+    background-color: #2ff149;
+    color: #2e2e2e;
+    border: 1px solid #929292;
     display: inline-block;
     padding: 5px 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 40px;
     border-radius: 5px;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .individual-plan-container {
     text-align: center;
-    border: 1px solid black;
+    border: 3px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.individual-plan-container:hover {
+    box-shadow: 5px 5px 7px var(--shadow-color);
 }
 
 /*-----------------EMAIL FORM-----------------*/
@@ -87,24 +151,50 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 20px;
     margin-bottom: 4rem;
+}
+
+.newsletter-flex-container > p {
+    font-size: 1.8rem;
+    color: var(--font-color);
+}
+
+form > button {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    box-shadow: 1px 1px;
+    cursor: pointer;
 }
 
 /*-----------------FOOTER-----------------*/
 footer {
-    border-top: 2px solid black;
+    background-color: var(--header-backgroundcolor);
+    border-top: 3px solid var(--header-and-footer-border-color);
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-size: 1.2rem;
+    height: 100px;
+}
+
+footer > p {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #c7c6c6;
 }
 
 .brand-logos-flex-container {
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
-.logo-brand-flex-selector {
+.brand-logos-flex-container > a {
+    color: rgb(231, 231, 231);
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
 }
